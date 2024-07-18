@@ -1,6 +1,8 @@
 import { LDEvaluationReason, LDFlagValue } from '@launchdarkly/js-sdk-common';
 
-export interface Flag {
+export type StorageNamespace = 'anonymous' | 'context' | 'index';
+
+export interface LDEvaluationResult {
   version: number;
   flagVersion: number;
   value: LDFlagValue;
@@ -12,12 +14,12 @@ export interface Flag {
   deleted?: boolean;
 }
 
-export interface PatchFlag extends Flag {
+export interface PatchFlag extends LDEvaluationResult {
   key: string;
 }
 
 export type DeleteFlag = Pick<PatchFlag, 'key' | 'version'>;
 
-export type Flags = {
-  [k: string]: Flag;
+export type LDEvaluationResultsMap = {
+  [k: string]: LDEvaluationResult;
 };

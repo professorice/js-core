@@ -25,7 +25,7 @@ import Configuration from './configuration';
 import createDiagnosticsManager from './diagnostics/createDiagnosticsManager';
 import createEventProcessor from './events/createEventProcessor';
 import EventFactory from './events/EventFactory';
-import { DeleteFlag, Flags, PatchFlag } from './types';
+import { DeleteFlag, LDEvaluationResultsMap, PatchFlag } from './types';
 import { addAutoEnv, calculateFlagChanges, ensureKey } from './utils';
 
 const { createErrorEvaluationDetail, createSuccessEvaluationDetail, ClientMessages, ErrorKinds } =
@@ -45,9 +45,11 @@ export default class LDClientImpl implements LDClient {
   private eventFactoryDefault = new EventFactory(false);
   private eventFactoryWithReasons = new EventFactory(true);
   private emitter: LDEmitter;
-  private flags: Flags = {};
+  private evalResultsMap: LDEvaluationResultsMap = {};
 
   private readonly clientContext: ClientContext;
+
+  private storage: Storage
 
   /**
    * Creates the client object synchronously. No async, no network calls.
@@ -135,7 +137,7 @@ export default class LDClientImpl implements LDClient {
 
   allFlags(): LDFlagSet {
     const result: LDFlagSet = {};
-    Object.entries(this.flags).forEach(([k, r]) => {
+    Object.entries(this.evalResultsMap).forEach(([k, r]) => {
       if (!r.deleted) {
         result[k] = r.value;
       }
@@ -175,10 +177,10 @@ export default class LDClientImpl implements LDClient {
 
     listeners.set('put', {
       deserializeData: JSON.parse,
-      processJson: async (dataJson: Flags) => {
+      processJson: async (dataJson: LDEvaluationResultsMap) => {
         this.logger.debug(`Streamer PUT: ${Object.keys(dataJson)}`);
         this.onIdentifyResolve(identifyResolve, dataJson, context, 'streamer PUT');
-        await this.platform.storage?.set(canonicalKey, JSON.stringify(this.flags));
+        await this.platform.storage?.set(canonicalKey, JSON.stringify(this.evalResultsMap));
       },
     });
 
@@ -186,12 +188,12 @@ export default class LDClientImpl implements LDClient {
       deserializeData: JSON.parse,
       processJson: async (dataJson: PatchFlag) => {
         this.logger.debug(`Streamer PATCH ${JSON.stringify(dataJson, null, 2)}`);
-        const existing = this.flags[dataJson.key];
+        const existing = this.evalResultsMap[dataJson.key];
 
         // add flag if it doesn't exist or update it if version is newer
         if (!existing || (existing && dataJson.version > existing.version)) {
-          this.flags[dataJson.key] = dataJson;
-          await this.platform.storage?.set(canonicalKey, JSON.stringify(this.flags));
+          this.evalResultsMap[dataJson.key] = dataJson;
+          await this.platform.storage?.set(canonicalKey, JSON.stringify(this.evalResultsMap));
           const changedKeys = [dataJson.key];
           this.logger.debug(`Emitting changes from PATCH: ${changedKeys}`);
           this.emitter.emit('change', context, changedKeys);
@@ -203,11 +205,11 @@ export default class LDClientImpl implements LDClient {
       deserializeData: JSON.parse,
       processJson: async (dataJson: DeleteFlag) => {
         this.logger.debug(`Streamer DELETE ${JSON.stringify(dataJson, null, 2)}`);
-        const existing = this.flags[dataJson.key];
+        const existing = this.evalResultsMap[dataJson.key];
 
         // the deleted flag is saved as tombstoned
         if (!existing || existing.version < dataJson.version) {
-          this.flags[dataJson.key] = {
+          this.evalResultsMap[dataJson.key] = {
             ...dataJson,
             deleted: true,
             // props below are set to sensible defaults. they are irrelevant
@@ -217,7 +219,7 @@ export default class LDClientImpl implements LDClient {
             variation: 0,
             trackEvents: false,
           };
-          await this.platform.storage?.set(canonicalKey, JSON.stringify(this.flags));
+          await this.platform.storage?.set(canonicalKey, JSON.stringify(this.evalResultsMap));
           const changedKeys = [dataJson.key];
           this.logger.debug(`Emitting changes from DELETE: ${changedKeys}`);
           this.emitter.emit('change', context, changedKeys);
@@ -266,7 +268,7 @@ export default class LDClientImpl implements LDClient {
     return { identifyPromise: raced, identifyResolve: res, identifyReject: rej };
   }
 
-  private async getFlagsFromStorage(canonicalKey: string): Promise<Flags | undefined> {
+  private async getFlagsFromStorage(canonicalKey: string): Promise<LDEvaluationResultsMap | undefined> {
     const f = await this.platform.storage?.get(canonicalKey);
     return f ? JSON.parse(f) : undefined;
   }
@@ -330,7 +332,7 @@ export default class LDClientImpl implements LDClient {
       } else {
         this.logger.debug('Offline identify no storage. Defaults will be used.');
         this.context = context;
-        this.flags = {};
+        this.evalResultsMap = {};
         identifyResolve();
       }
     } else {
@@ -369,11 +371,11 @@ export default class LDClientImpl implements LDClient {
    * @param source For logging purposes
    * @private
    */
-  private onIdentifyResolve(resolve: any, flags: Flags, context: LDContext, source: string) {
+  private onIdentifyResolve(resolve: any, flags: LDEvaluationResultsMap, context: LDContext, source: string) {
     resolve();
-    const changedKeys = calculateFlagChanges(this.flags, flags);
+    const changedKeys = calculateFlagChanges(this.evalResultsMap, flags);
     this.context = context;
-    this.flags = flags;
+    this.evalResultsMap = flags;
 
     if (changedKeys.length > 0) {
       this.emitter.emit('change', context, changedKeys);
@@ -424,7 +426,7 @@ export default class LDClientImpl implements LDClient {
     }
 
     const evalContext = Context.fromLDContext(this.context);
-    const found = this.flags[flagKey];
+    const found = this.evalResultsMap[flagKey];
 
     if (!found || found.deleted) {
       const defVal = defaultValue ?? null;

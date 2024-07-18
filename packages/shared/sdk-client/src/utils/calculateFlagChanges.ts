@@ -1,9 +1,9 @@
 import { fastDeepEqual } from '@launchdarkly/js-sdk-common';
 
-import { Flags } from '../types';
+import { LDEvaluationResultsMap } from '../types';
 
 // eslint-disable-next-line import/prefer-default-export
-export default function calculateFlagChanges(flags: Flags, incomingFlags: Flags) {
+export default function calculateFlagChanges(flags: LDEvaluationResultsMap, incomingFlags: LDEvaluationResultsMap) {
   const changedKeys: string[] = [];
 
   // flag deleted or updated

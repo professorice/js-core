@@ -1,8 +1,8 @@
 import { Platform } from '@launchdarkly/js-sdk-common';
 
-export type Namespace = 'anonymous' | 'context';
+import { StorageNamespace } from '../types';
 
-export const prefixNamespace = (namespace: Namespace, s: string) => {
+export const prefixNamespace = (namespace: StorageNamespace, s: string) => {
   let n: string;
 
   switch (namespace) {
@@ -11,6 +11,9 @@ export const prefixNamespace = (namespace: Namespace, s: string) => {
       break;
     case 'context':
       n = 'LaunchDarkly_ContextKeys_';
+      break;
+    case 'index':
+      n = 'LaunchDarkly_Index_';
       break;
     default:
       throw new Error(
@@ -22,7 +25,7 @@ export const prefixNamespace = (namespace: Namespace, s: string) => {
 };
 
 export const getOrGenerateKey = async (
-  namespace: Namespace,
+  namespace: StorageNamespace,
   contextKind: string,
   { crypto, storage }: Platform,
 ) => {
