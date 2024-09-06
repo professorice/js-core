@@ -1,5 +1,50 @@
 # Changelog
 
+## [10.7.0](https://github.com/professorice/js-core/compare/react-native-client-sdk-v10.6.1...react-native-client-sdk-v10.7.0) (2024-09-06)
+
+
+### Features
+
+* Add configuration validation for ReactNative specific configuration. ([#532](https://github.com/professorice/js-core/issues/532)) ([c1490e2](https://github.com/professorice/js-core/commit/c1490e22d0b3fb4d7df878aabab0ea24db502fb6))
+* Add connection mananger. ([#522](https://github.com/professorice/js-core/issues/522)) ([5bf8b16](https://github.com/professorice/js-core/commit/5bf8b16e26e7d8cbbd18524f1c13f773de457b82))
+* Add identify timeout to client-sdk. ([#420](https://github.com/professorice/js-core/issues/420)) ([5d73dfe](https://github.com/professorice/js-core/commit/5d73dfeb0d5cdacf620e65e214dd2e334363490e))
+* Added react-universal code. ([#493](https://github.com/professorice/js-core/issues/493)) ([e1d2d30](https://github.com/professorice/js-core/commit/e1d2d3061246421e9931d4ec271d477fcbede265))
+* custom storage option for React Native SDK ([#539](https://github.com/professorice/js-core/issues/539)) ([115bd82](https://github.com/professorice/js-core/commit/115bd828c665731084665b5d94bb3836942332b1))
+* Implement polling support. ([#524](https://github.com/professorice/js-core/issues/524)) ([a99048e](https://github.com/professorice/js-core/commit/a99048e0cebaafd536f79114c4727524b8f7357d))
+* React Native SDK major release. ([#369](https://github.com/professorice/js-core/issues/369)) ([1d5ca40](https://github.com/professorice/js-core/commit/1d5ca40888c4db4bb938884ca55732750fb10614))
+* React-native support for auto-env attributes. Only affects react-native package. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* Refactor application state handling. ([#523](https://github.com/professorice/js-core/issues/523)) ([f5b81e6](https://github.com/professorice/js-core/commit/f5b81e6fc571dc9d97a18d07f382c77cd938fd65))
+* Remove event target shim. ([#545](https://github.com/professorice/js-core/issues/545)) ([448ad67](https://github.com/professorice/js-core/commit/448ad67815b9ec29abd322ed8483b2367147b146)), closes [#412](https://github.com/professorice/js-core/issues/412)
+* Update eslint jest configuration and versions. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* Update expo and RN version used in example. ([#520](https://github.com/professorice/js-core/issues/520)) ([b8384c4](https://github.com/professorice/js-core/commit/b8384c41243fb7475439cc634459b5156e05791b))
+
+
+### Bug Fixes
+
+* Add Detox e2e tests. ([#340](https://github.com/professorice/js-core/issues/340)) ([e7b9d29](https://github.com/professorice/js-core/commit/e7b9d299fe1e1c34489f8688099de466a12a3622))
+* Add more rn sdk unit tests. ([#339](https://github.com/professorice/js-core/issues/339)) ([913bc00](https://github.com/professorice/js-core/commit/913bc0009a39188b6b9785e5c4b4b79078061821))
+* Add RN SDK offline support through ConnectionMode. ([#361](https://github.com/professorice/js-core/issues/361)) ([d97ce82](https://github.com/professorice/js-core/commit/d97ce82861438a1b79b93799a9d061cdfa1ab027))
+* Added iOS SettingsManager null check. ([#471](https://github.com/professorice/js-core/issues/471)) ([8ff641b](https://github.com/professorice/js-core/commit/8ff641be8b32f24884457bd506566e283cf04e40))
+* Babel TypeError due to event-target-shim ([#365](https://github.com/professorice/js-core/issues/365)) ([c1c0086](https://github.com/professorice/js-core/commit/c1c008610f36c8dd0c1e3da3cf9450c64d41874f))
+* Fix Detox e2e tests broken after 0.73 update. ([#366](https://github.com/professorice/js-core/issues/366)) ([6349b98](https://github.com/professorice/js-core/commit/6349b98e70554d8240f0e8d6b1090e4c37bde6eb))
+* Fix field visibility. ([#530](https://github.com/professorice/js-core/issues/530)) ([21fb18b](https://github.com/professorice/js-core/commit/21fb18b40139583b44a4185fb689b043547641ab))
+* Guard against null auto env attributes and async-storage. ([#384](https://github.com/professorice/js-core/issues/384)) ([14ce392](https://github.com/professorice/js-core/commit/14ce392ade486fa8168d2dae8375e4c201912f83))
+* Handle non-status code errors for streaming connection. ([#533](https://github.com/professorice/js-core/issues/533)) ([fc4645e](https://github.com/professorice/js-core/commit/fc4645eb7d70425e7ea615e275e5ad1e488365d4))
+* Implement RN SDK EventSource jitter backoff. ([#359](https://github.com/professorice/js-core/issues/359)) ([95e58bd](https://github.com/professorice/js-core/commit/95e58bd666772b30b31ac98a462ca19407bc2bac))
+* Improvements and fixes from docs review. ([#362](https://github.com/professorice/js-core/issues/362)) ([ba07fbf](https://github.com/professorice/js-core/commit/ba07fbf4ea0b505c4bdc6376b6b36d7a9c1e5fda))
+* Make it more clear what is happening when an event source is connecting. ([#518](https://github.com/professorice/js-core/issues/518)) ([52055ba](https://github.com/professorice/js-core/commit/52055ba603349c6a2d94e25c58813765d4d9abd9))
+* Remove beta warning for sdk-server. Added tsdoc comments for rn sdk. Added README for sdk-client. ([#334](https://github.com/professorice/js-core/issues/334)) ([bb7c3b4](https://github.com/professorice/js-core/commit/bb7c3b45a72d203ad7209def3982d9094fb4cbc9))
+* Remove release-as for sdk-client and rn sdk and updated READMEs. ([#337](https://github.com/professorice/js-core/issues/337)) ([52bf088](https://github.com/professorice/js-core/commit/52bf088bd9c7a75f673e37de829459bbad4deb90))
+* RN streamer connection in background and foreground. ([#360](https://github.com/professorice/js-core/issues/360)) ([c69b768](https://github.com/professorice/js-core/commit/c69b7686eed1971288adfbe527b4bf53ba5fe2b7))
+* Stream retry failure due to previous open connection. ([#409](https://github.com/professorice/js-core/issues/409)) ([ae08e08](https://github.com/professorice/js-core/commit/ae08e08470d954a683940c4263f3274ac73c4206))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-client-sdk-common bumped from 1.7.0 to 2.0.0
+
 ## [10.6.1](https://github.com/launchdarkly/js-core/compare/react-native-client-sdk-v10.6.0...react-native-client-sdk-v10.6.1) (2024-09-03)
 
 

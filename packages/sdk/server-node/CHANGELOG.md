@@ -2,6 +2,55 @@
 
 All notable changes to `@launchdarkly/node-server-sdk` will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [10.0.0](https://github.com/professorice/js-core/compare/node-server-sdk-v9.5.4...node-server-sdk-v10.0.0) (2024-09-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* Implement Migrations. Refactor for client SDKs. ([#293](https://github.com/professorice/js-core/issues/293))
+* Make options optional in init method for @launchdarkly/node-server-sdk. ([#64](https://github.com/professorice/js-core/issues/64))
+* Add uuidv4 to platform. ([#56](https://github.com/professorice/js-core/issues/56))
+
+### Features
+
+* Add support for hooks. ([ce6f041](https://github.com/professorice/js-core/commit/ce6f0414567945bbe39c22df7cf6ae24c2e32931))
+* Add support for optional timeout for waitForInitialization. ([#437](https://github.com/professorice/js-core/issues/437)) ([c6032b3](https://github.com/professorice/js-core/commit/c6032b3dd80421ff42aefd729442d18cd27b16e4))
+* Add uuidv4 to platform. ([#56](https://github.com/professorice/js-core/issues/56)) ([282a3fe](https://github.com/professorice/js-core/commit/282a3fed8289fef680c5c2593e74aea0a3113c71))
+* Add wrapper support. ([#526](https://github.com/professorice/js-core/issues/526)) ([29a43a4](https://github.com/professorice/js-core/commit/29a43a4b5243e16d2f746340d4d50467e0875980))
+* Allow imports from paths. ([#162](https://github.com/professorice/js-core/issues/162)) ([0f8f601](https://github.com/professorice/js-core/commit/0f8f601fb6b35e5e677c93c95f1bb70d53afc84f))
+* Allow specifying the user agent per-sdk implementation. ([#226](https://github.com/professorice/js-core/issues/226)) ([e57716f](https://github.com/professorice/js-core/commit/e57716f3f6f0ba8568e32b0937903ca46e5470ad))
+* Implement handling for gzip compressed responses. ([#367](https://github.com/professorice/js-core/issues/367)) ([a52bee1](https://github.com/professorice/js-core/commit/a52bee19b909b210b4957d46a300777de0e27ada))
+* Implement Migrations. Refactor for client SDKs. ([#293](https://github.com/professorice/js-core/issues/293)) ([c66aa6e](https://github.com/professorice/js-core/commit/c66aa6ea0d12e1e4e565cb8378d367c31fab9c1b))
+* initial major release ([#101](https://github.com/professorice/js-core/issues/101)) ([9883675](https://github.com/professorice/js-core/commit/98836758d1998f208a1e13a68955611e0b10a8ce))
+* Node server SDK major release. ([#180](https://github.com/professorice/js-core/issues/180)) ([2e02f72](https://github.com/professorice/js-core/commit/2e02f72ec43e86fb203d32742b78a8e4a905a114))
+* React-native support for auto-env attributes. Only affects react-native package. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* Update eslint jest configuration and versions. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* Update packaging to include only needed files. ([06b2f28](https://github.com/professorice/js-core/commit/06b2f28c85ba9e8610f88cb234546403e534fa77))
+* Update to launchdarkly-eventsource 2.0.0. ([#199](https://github.com/professorice/js-core/issues/199)) ([5b7bac9](https://github.com/professorice/js-core/commit/5b7bac9d864d7e7e5204131eae7612fc982e941e))
+
+
+### Bug Fixes
+
+* add licence and fix missing package.json fields. ([c586398](https://github.com/professorice/js-core/commit/c5863980c5bf4ee2a7590dfc4f7c575045d669b0))
+* Configure max backoff and jitter ratio to ensure exponential backoff. ([#463](https://github.com/professorice/js-core/issues/463)) ([050007d](https://github.com/professorice/js-core/commit/050007d8153ecd67633a05761e9ea3b27e15b0ca))
+* Correctly handle excluded big segments. ([#160](https://github.com/professorice/js-core/issues/160)) ([e9cb45a](https://github.com/professorice/js-core/commit/e9cb45a14ed6d3f931680dab0feb4b5cef350592))
+* Ensure top level commands work correctly ([#105](https://github.com/professorice/js-core/issues/105)) ([762571f](https://github.com/professorice/js-core/commit/762571ff851558d229e4d29ba40a9c16b89f2a8d))
+* Fix an issue where failed http requests could cause an unhandled promise rejection. ([#371](https://github.com/professorice/js-core/issues/371)) ([dd6d0e7](https://github.com/professorice/js-core/commit/dd6d0e7431786e15d6f086f5a667f315cf1094a2))
+* Log errors when there is no error event handler. ([#495](https://github.com/professorice/js-core/issues/495)) ([6b73699](https://github.com/professorice/js-core/commit/6b73699061efa46cd291756d3932fcf78d480f40))
+* Make options optional in init method for @launchdarkly/node-server-sdk. ([#64](https://github.com/professorice/js-core/issues/64)) ([291804e](https://github.com/professorice/js-core/commit/291804e75119f42575615569c974c0813453d737))
+* move "default" conditional exports to be last ([#190](https://github.com/professorice/js-core/issues/190)) ([49ca1a1](https://github.com/professorice/js-core/commit/49ca1a1d47595b2c3ef449054ba6d76a8685a590))
+* remove beta text from cloudflare sdk readme. ([c586398](https://github.com/professorice/js-core/commit/c5863980c5bf4ee2a7590dfc4f7c575045d669b0))
+* Switch to es2017 target to ensure native async/await. ([a83e4e6](https://github.com/professorice/js-core/commit/a83e4e62d04c66105a1b0e8893640a7ca2d641e4))
+* Update event source to better log unexpected disconnects. ([#451](https://github.com/professorice/js-core/issues/451)) ([0c83afd](https://github.com/professorice/js-core/commit/0c83afd5f539ecce09f4f5723bc01e5584cc268d))
+* Update launchdarkly-eventsource to 2.0.3. ([#468](https://github.com/professorice/js-core/issues/468)) ([c0f934d](https://github.com/professorice/js-core/commit/c0f934db6066f4767e2f52b332adf4a3c2837e40)), closes [#458](https://github.com/professorice/js-core/issues/458)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-server-sdk-common bumped from 2.6.1 to 3.0.0
+
 ## [9.5.4](https://github.com/launchdarkly/js-core/compare/node-server-sdk-v9.5.3...node-server-sdk-v9.5.4) (2024-09-05)
 
 
