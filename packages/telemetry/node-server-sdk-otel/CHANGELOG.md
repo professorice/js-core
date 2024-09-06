@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.1.0](https://github.com/professorice/js-core/compare/node-server-sdk-otel-v1.0.13...node-server-sdk-otel-v1.1.0) (2024-09-06)
+
+
+### Features
+
+* Add OpenTelemetry support for node-server-sdk. ([#401](https://github.com/professorice/js-core/issues/401)) ([daf4939](https://github.com/professorice/js-core/commit/daf4939fdd53c9fe791e828783f809382673d9a5))
+
+
+### Bug Fixes
+
+* Correct store/telemetry peer deps. ([#439](https://github.com/professorice/js-core/issues/439)) ([b963554](https://github.com/professorice/js-core/commit/b9635541ee0a31094063075faae942698f2e8180))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @launchdarkly/node-server-sdk bumped from 9.5.4 to 10.0.0
+  * peerDependencies
+    * @launchdarkly/node-server-sdk bumped from >=9.4.3 to >=10.0.0
+
 ## [1.0.13](https://github.com/launchdarkly/js-core/compare/node-server-sdk-otel-v1.0.12...node-server-sdk-otel-v1.0.13) (2024-09-05)
 
 
