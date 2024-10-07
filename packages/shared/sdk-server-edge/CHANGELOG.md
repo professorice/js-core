@@ -96,6 +96,44 @@
   * dependencies
     * @launchdarkly/js-server-sdk-common bumped from 2.2.1 to 2.2.2
 
+## [3.0.0](https://github.com/professorice/js-core/compare/js-server-sdk-common-edge-v2.4.0...js-server-sdk-common-edge-v3.0.0) (2024-10-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* Implement Migrations. Refactor for client SDKs. ([#293](https://github.com/professorice/js-core/issues/293))
+
+### Features
+
+* Add support for conditional event source capabilities. ([#577](https://github.com/professorice/js-core/issues/577)) ([fe82500](https://github.com/professorice/js-core/commit/fe82500f28cf8d8311502098aa6cc2e73932064e))
+* Add support for optional timeout for waitForInitialization. ([#437](https://github.com/professorice/js-core/issues/437)) ([c6032b3](https://github.com/professorice/js-core/commit/c6032b3dd80421ff42aefd729442d18cd27b16e4))
+* create sdk-server-edge package ([#83](https://github.com/professorice/js-core/issues/83)) ([0578190](https://github.com/professorice/js-core/commit/0578190123e2712b50774ca3087c7577ef2b9eb2))
+* edge sdks should send events to bulk/environment endpoint ([#256](https://github.com/professorice/js-core/issues/256)) ([f45910f](https://github.com/professorice/js-core/commit/f45910f171d434ca080bb6486331fbfbd2793985))
+* Implement common client side support for auto environment attributes. ([#356](https://github.com/professorice/js-core/issues/356)) ([8d80259](https://github.com/professorice/js-core/commit/8d80259f7379827e46bef8bcf8293e3b2d966d25))
+* Implement Migrations. Refactor for client SDKs. ([#293](https://github.com/professorice/js-core/issues/293)) ([c66aa6e](https://github.com/professorice/js-core/commit/c66aa6ea0d12e1e4e565cb8378d367c31fab9c1b))
+* initial major release ([#101](https://github.com/professorice/js-core/issues/101)) ([9883675](https://github.com/professorice/js-core/commit/98836758d1998f208a1e13a68955611e0b10a8ce))
+* React-native support for auto-env attributes. Only affects react-native package. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* support cjs and esm for cloudflare and edge common ([#87](https://github.com/professorice/js-core/issues/87)) ([bab593c](https://github.com/professorice/js-core/commit/bab593cdd9ff8e8881259a21f24c35088e7092bc))
+* Update eslint jest configuration and versions. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+
+
+### Bug Fixes
+
+* add licence and fix missing package.json fields. ([c586398](https://github.com/professorice/js-core/commit/c5863980c5bf4ee2a7590dfc4f7c575045d669b0))
+* Ensure top level commands work correctly ([#105](https://github.com/professorice/js-core/issues/105)) ([762571f](https://github.com/professorice/js-core/commit/762571ff851558d229e4d29ba40a9c16b89f2a8d))
+* Log errors when there is no error event handler. ([#495](https://github.com/professorice/js-core/issues/495)) ([6b73699](https://github.com/professorice/js-core/commit/6b73699061efa46cd291756d3932fcf78d480f40))
+* make vercel use EdgeProvider ([#114](https://github.com/professorice/js-core/issues/114)) ([6705996](https://github.com/professorice/js-core/commit/6705996929471ff8f72f97d58a665f75d4e5fecd))
+* remove beta text from cloudflare sdk readme. ([c586398](https://github.com/professorice/js-core/commit/c5863980c5bf4ee2a7590dfc4f7c575045d669b0))
+* remove useless defaults ([#94](https://github.com/professorice/js-core/issues/94)) ([a9f533a](https://github.com/professorice/js-core/commit/a9f533a4bdeb73338fd04fb5be2efd64c2d82c75))
+* Switch to es2017 target to ensure native async/await. ([a83e4e6](https://github.com/professorice/js-core/commit/a83e4e62d04c66105a1b0e8893640a7ca2d641e4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-server-sdk-common bumped from 2.7.0 to 3.0.0
+
 ## [2.4.0](https://github.com/launchdarkly/js-core/compare/js-server-sdk-common-edge-v2.3.9...js-server-sdk-common-edge-v2.4.0) (2024-09-26)
 
 
