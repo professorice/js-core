@@ -21,6 +21,44 @@ All notable changes to the LaunchDarkly SDK for Cloudflare Workers will be docum
   * devDependencies
     * @launchdarkly/js-server-sdk-common-edge bumped from 2.2.1 to 2.2.2
 
+## [2.7.0](https://github.com/professorice/js-core/compare/cloudflare-server-sdk-v2.6.0...cloudflare-server-sdk-v2.7.0) (2024-10-31)
+
+
+### Features
+
+* Allow specifying the user agent per-sdk implementation. ([#226](https://github.com/professorice/js-core/issues/226)) ([e57716f](https://github.com/professorice/js-core/commit/e57716f3f6f0ba8568e32b0937903ca46e5470ad))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* cloudflare sdk base ([#74](https://github.com/professorice/js-core/issues/74)) ([add0c63](https://github.com/professorice/js-core/commit/add0c6312c253752d2766cfd499b5134e87a17fb))
+* create sdk-server-edge package ([#83](https://github.com/professorice/js-core/issues/83)) ([0578190](https://github.com/professorice/js-core/commit/0578190123e2712b50774ca3087c7577ef2b9eb2))
+* edge sdks should send events to bulk/environment endpoint ([#256](https://github.com/professorice/js-core/issues/256)) ([f45910f](https://github.com/professorice/js-core/commit/f45910f171d434ca080bb6486331fbfbd2793985))
+* fix typedoc and export common types ([#81](https://github.com/professorice/js-core/issues/81)) ([daefb60](https://github.com/professorice/js-core/commit/daefb60fb63ac9d2ebd4fea0fadaa0263b0b84ae))
+* initial major release ([#101](https://github.com/professorice/js-core/issues/101)) ([9883675](https://github.com/professorice/js-core/commit/98836758d1998f208a1e13a68955611e0b10a8ce))
+* JSR support for Cloudflare SDK. ([#415](https://github.com/professorice/js-core/issues/415)) ([30866f3](https://github.com/professorice/js-core/commit/30866f34a41b74e2cf08457f2382c647bc37bd64))
+* React-native support for auto-env attributes. Only affects react-native package. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* rollup cloudflare sdk ([#279](https://github.com/professorice/js-core/issues/279)) ([7af4f6e](https://github.com/professorice/js-core/commit/7af4f6e2d029b87396087d96904cdfa7d39a8cb3))
+* support cjs and esm for cloudflare and edge common ([#87](https://github.com/professorice/js-core/issues/87)) ([bab593c](https://github.com/professorice/js-core/commit/bab593cdd9ff8e8881259a21f24c35088e7092bc))
+* Update eslint jest configuration and versions. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+
+
+### Bug Fixes
+
+* add licence and fix missing package.json fields. ([c586398](https://github.com/professorice/js-core/commit/c5863980c5bf4ee2a7590dfc4f7c575045d669b0))
+* bump cloudflare sdk dep ([#115](https://github.com/professorice/js-core/issues/115)) ([df9533f](https://github.com/professorice/js-core/commit/df9533fc58ead31ed76a3e82a574daca7443d8f7))
+* Ensure top level commands work correctly ([#105](https://github.com/professorice/js-core/issues/105)) ([762571f](https://github.com/professorice/js-core/commit/762571ff851558d229e4d29ba40a9c16b89f2a8d))
+* fixed bug where the feature store does not deserialize KV values… ([#107](https://github.com/professorice/js-core/issues/107)) ([68113b7](https://github.com/professorice/js-core/commit/68113b7ac39f70a92b291eb2c0eda3b7d78145fc))
+* Improve readme. ([50d8556](https://github.com/professorice/js-core/commit/50d85561c5f7577e1ecdc64f919d753c5df66b39))
+* Include name and version in platform. ([#453](https://github.com/professorice/js-core/issues/453)) ([3b4e212](https://github.com/professorice/js-core/commit/3b4e212a563e5dc8b4953fadb6b31160076ec001))
+* remove beta text from cloudflare sdk readme. ([c586398](https://github.com/professorice/js-core/commit/c5863980c5bf4ee2a7590dfc4f7c575045d669b0))
+* semver util import error ([#90](https://github.com/professorice/js-core/issues/90)) ([b70015a](https://github.com/professorice/js-core/commit/b70015a86b460e8cdc3ee4fff8b339955bd95099))
+* Switch to es2017 target to ensure native async/await. ([a83e4e6](https://github.com/professorice/js-core/commit/a83e4e62d04c66105a1b0e8893640a7ca2d641e4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @launchdarkly/js-server-sdk-common-edge bumped from 2.5.0 to 3.0.0
+
 ## [2.6.0](https://github.com/launchdarkly/js-core/compare/cloudflare-server-sdk-v2.5.15...cloudflare-server-sdk-v2.6.0) (2024-10-17)
 
 

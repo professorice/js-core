@@ -90,6 +90,40 @@
   * devDependencies
     * @launchdarkly/node-server-sdk bumped from 9.2.1 to 9.2.2
 
+## [7.0.0](https://github.com/professorice/js-core/compare/node-server-sdk-dynamodb-v6.2.0...node-server-sdk-dynamodb-v7.0.0) (2024-10-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Implement Migrations. Refactor for client SDKs. ([#293](https://github.com/professorice/js-core/issues/293))
+
+### Features
+
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* Implement Migrations. Refactor for client SDKs. ([#293](https://github.com/professorice/js-core/issues/293)) ([c66aa6e](https://github.com/professorice/js-core/commit/c66aa6ea0d12e1e4e565cb8378d367c31fab9c1b))
+* Implement support for the DynamoDB persistent store. ([#158](https://github.com/professorice/js-core/issues/158)) ([eaa063e](https://github.com/professorice/js-core/commit/eaa063e4daaf4710cf4c3fc502bbdfb2108c829d))
+* Node server SDK major release. ([#180](https://github.com/professorice/js-core/issues/180)) ([2e02f72](https://github.com/professorice/js-core/commit/2e02f72ec43e86fb203d32742b78a8e4a905a114))
+* React-native support for auto-env attributes. Only affects react-native package. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* Update eslint jest configuration and versions. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+
+
+### Bug Fixes
+
+* Correct store/telemetry peer deps. ([#439](https://github.com/professorice/js-core/issues/439)) ([b963554](https://github.com/professorice/js-core/commit/b9635541ee0a31094063075faae942698f2e8180))
+* Fix peer dependency version for node store integrations. ([#186](https://github.com/professorice/js-core/issues/186)) ([1e7548b](https://github.com/professorice/js-core/commit/1e7548b01da4937a72b3d40264ab0238fd835b8b))
+* Fix typings for big segment store factories. ([#413](https://github.com/professorice/js-core/issues/413)) ([723804b](https://github.com/professorice/js-core/commit/723804bb7db19f485d84940715c69e34cc08062f))
+* Include prerequisiteKey in migration op event. ([#481](https://github.com/professorice/js-core/issues/481)) ([824f59d](https://github.com/professorice/js-core/commit/824f59d256e6316365b32117887a1af2520d8996))
+* Switch to es2017 target to ensure native async/await. ([a83e4e6](https://github.com/professorice/js-core/commit/a83e4e62d04c66105a1b0e8893640a7ca2d641e4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @launchdarkly/node-server-sdk bumped from 9.7.0 to 10.0.0
+  * peerDependencies
+    * @launchdarkly/node-server-sdk bumped from >=9.4.3 to >=10.0.0
+
 ## [6.2.0](https://github.com/launchdarkly/js-core/compare/node-server-sdk-dynamodb-v6.1.23...node-server-sdk-dynamodb-v6.2.0) (2024-10-17)
 
 
