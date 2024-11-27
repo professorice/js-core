@@ -31,6 +31,44 @@ All notable changes to the LaunchDarkly SDK for Akamai Workers will be documente
     * @launchdarkly/akamai-edgeworker-sdk-common bumped from ^1.1.1 to ^1.1.2
     * @launchdarkly/js-server-sdk-common bumped from ^2.2.1 to ^2.2.2
 
+## [1.4.0](https://github.com/professorice/js-core/compare/akamai-server-edgekv-sdk-v1.3.0...akamai-server-edgekv-sdk-v1.4.0) (2024-11-27)
+
+
+### Features
+
+* Added CommonJS support for Akamai SDKs ([#163](https://github.com/professorice/js-core/issues/163)) ([6749a52](https://github.com/professorice/js-core/commit/6749a52022de35590db2ea3065a117235890c0ff))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* Exported typescript types for Akamai SDK ([e7be20c](https://github.com/professorice/js-core/commit/e7be20caa2f13abecf12a29ddc46a45a59fc7b5c))
+* Exported typescript types for Akamai SDK ([#135](https://github.com/professorice/js-core/issues/135)) ([01da2a9](https://github.com/professorice/js-core/commit/01da2a9abd203ed171497c92eab8abd0f9aa81c2))
+* React-native support for auto-env attributes. Only affects react-native package. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* Release akamai-edgeworker-sdk-common ([#138](https://github.com/professorice/js-core/issues/138)) ([f22a680](https://github.com/professorice/js-core/commit/f22a680be3eb8bb2af543ff1d5bc5198bb8a6a05))
+* Release beta version of Akamai SDKs ([#155](https://github.com/professorice/js-core/issues/155)) ([aa8158c](https://github.com/professorice/js-core/commit/aa8158cbf16a9abf681438341b52dc1f640c5c40))
+* Release v1.0.0 of Akamai SDKs ([#196](https://github.com/professorice/js-core/issues/196)) ([7f8c827](https://github.com/professorice/js-core/commit/7f8c827c71ac7744b88dc849325e95db8144892f))
+* Update eslint jest configuration and versions. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* Upgrade edgekv bundled files to 0.6.3 ([#610](https://github.com/professorice/js-core/issues/610)) ([58dfec6](https://github.com/professorice/js-core/commit/58dfec68c268390852cc511191c7f9b47ec3e668))
+
+
+### Bug Fixes
+
+* Fix issue that caused the feature store get function impl to be called twice ([#178](https://github.com/professorice/js-core/issues/178)) ([68f1c78](https://github.com/professorice/js-core/commit/68f1c784c2481f7c5dead9d13b8e16a54048aaa1))
+* Fix typescript exports for both cjs and es modules ([21ea133](https://github.com/professorice/js-core/commit/21ea13322b6d69f9baaaddf0d19c311296fc5389))
+* Initial alpha release of the SDK with support for external data store ([0f839cf](https://github.com/professorice/js-core/commit/0f839cf5afe341a19007ddbd6a6f83fb2a7db0ab))
+* Initial alpha release of the SDK with support for external data store ([c380d8c](https://github.com/professorice/js-core/commit/c380d8ca8ab369c4df0c23c01e6b8cf25855969f))
+* Initial alpha release of the SDK with support for external data store ([7dedc24](https://github.com/professorice/js-core/commit/7dedc248beccdb3dacd74f4b19c8b2d1cd4ef682))
+* Initial alpha release of the SDK with support for external data store ([1f746e9](https://github.com/professorice/js-core/commit/1f746e9383b15e39380cc53ee33f26c2f47ea2a6))
+* Initial alpha release of the SDK with support for external data store ([7ec1c24](https://github.com/professorice/js-core/commit/7ec1c246091bcab9e0b665fedde3b6619eda357c))
+* Initial alpha release of the SDK with support for external data store ([3e3f87d](https://github.com/professorice/js-core/commit/3e3f87d94a4ea733f73bac059c650fb3b14f5e78))
+* Switch to es2017 target to ensure native async/await. ([a83e4e6](https://github.com/professorice/js-core/commit/a83e4e62d04c66105a1b0e8893640a7ca2d641e4))
+* Update readme links for Akamai SDKs ([#157](https://github.com/professorice/js-core/issues/157)) ([8a138c1](https://github.com/professorice/js-core/commit/8a138c169cc33c1e155c1d3643a73ce55d16b902))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/akamai-edgeworker-sdk-common bumped from ^1.3.2 to ^2.0.0
+    * @launchdarkly/js-server-sdk-common bumped from ^2.10.0 to ^3.0.0
+
 ## [1.3.0](https://github.com/launchdarkly/js-core/compare/akamai-server-edgekv-sdk-v1.2.1...akamai-server-edgekv-sdk-v1.3.0) (2024-11-14)
 
 
