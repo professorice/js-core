@@ -21,6 +21,32 @@ All notable changes to the LaunchDarkly SDK for Cloudflare Workers will be docum
   * devDependencies
     * @launchdarkly/js-server-sdk-common-edge bumped from 2.2.1 to 2.2.2
 
+## [2.7.0](https://github.com/professorice/js-core/compare/cloudflare-server-sdk-v2.6.2...cloudflare-server-sdk-v2.7.0) (2024-12-09)
+
+
+### Features
+
+* Allow specifying the user agent per-sdk implementation. ([#226](https://github.com/professorice/js-core/issues/226)) ([e57716f](https://github.com/professorice/js-core/commit/e57716f3f6f0ba8568e32b0937903ca46e5470ad))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* edge sdks should send events to bulk/environment endpoint ([#256](https://github.com/professorice/js-core/issues/256)) ([f45910f](https://github.com/professorice/js-core/commit/f45910f171d434ca080bb6486331fbfbd2793985))
+* JSR support for Cloudflare SDK. ([#415](https://github.com/professorice/js-core/issues/415)) ([30866f3](https://github.com/professorice/js-core/commit/30866f34a41b74e2cf08457f2382c647bc37bd64))
+* React-native support for auto-env attributes. Only affects react-native package. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* rollup cloudflare sdk ([#279](https://github.com/professorice/js-core/issues/279)) ([7af4f6e](https://github.com/professorice/js-core/commit/7af4f6e2d029b87396087d96904cdfa7d39a8cb3))
+* Update eslint jest configuration and versions. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+
+
+### Bug Fixes
+
+* Include name and version in platform. ([#453](https://github.com/professorice/js-core/issues/453)) ([3b4e212](https://github.com/professorice/js-core/commit/3b4e212a563e5dc8b4953fadb6b31160076ec001))
+* Switch to es2017 target to ensure native async/await. ([a83e4e6](https://github.com/professorice/js-core/commit/a83e4e62d04c66105a1b0e8893640a7ca2d641e4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @launchdarkly/js-server-sdk-common-edge bumped from 2.5.2 to 3.0.0
+
 ## [2.6.2](https://github.com/launchdarkly/js-core/compare/cloudflare-server-sdk-v2.6.1...cloudflare-server-sdk-v2.6.2) (2024-11-14)
 
 
