@@ -96,6 +96,37 @@
   * dependencies
     * @launchdarkly/js-server-sdk-common bumped from 2.2.1 to 2.2.2
 
+## [3.0.0](https://github.com/professorice/js-core/compare/js-server-sdk-common-edge-v2.5.2...js-server-sdk-common-edge-v3.0.0) (2024-12-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Implement Migrations. Refactor for client SDKs. ([#293](https://github.com/professorice/js-core/issues/293))
+
+### Features
+
+* Add support for conditional event source capabilities. ([#577](https://github.com/professorice/js-core/issues/577)) ([fe82500](https://github.com/professorice/js-core/commit/fe82500f28cf8d8311502098aa6cc2e73932064e))
+* Add support for optional timeout for waitForInitialization. ([#437](https://github.com/professorice/js-core/issues/437)) ([c6032b3](https://github.com/professorice/js-core/commit/c6032b3dd80421ff42aefd729442d18cd27b16e4))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* edge sdks should send events to bulk/environment endpoint ([#256](https://github.com/professorice/js-core/issues/256)) ([f45910f](https://github.com/professorice/js-core/commit/f45910f171d434ca080bb6486331fbfbd2793985))
+* Implement common client side support for auto environment attributes. ([#356](https://github.com/professorice/js-core/issues/356)) ([8d80259](https://github.com/professorice/js-core/commit/8d80259f7379827e46bef8bcf8293e3b2d966d25))
+* Implement Migrations. Refactor for client SDKs. ([#293](https://github.com/professorice/js-core/issues/293)) ([c66aa6e](https://github.com/professorice/js-core/commit/c66aa6ea0d12e1e4e565cb8378d367c31fab9c1b))
+* React-native support for auto-env attributes. Only affects react-native package. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+* Update eslint jest configuration and versions. ([deea99c](https://github.com/professorice/js-core/commit/deea99ca2fbb3865f2ce55a83b2cf12e0ae2db5e))
+
+
+### Bug Fixes
+
+* Log errors when there is no error event handler. ([#495](https://github.com/professorice/js-core/issues/495)) ([6b73699](https://github.com/professorice/js-core/commit/6b73699061efa46cd291756d3932fcf78d480f40))
+* Switch to es2017 target to ensure native async/await. ([a83e4e6](https://github.com/professorice/js-core/commit/a83e4e62d04c66105a1b0e8893640a7ca2d641e4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-server-sdk-common bumped from 2.10.0 to 3.0.0
+
 ## [2.5.2](https://github.com/launchdarkly/js-core/compare/js-server-sdk-common-edge-v2.5.1...js-server-sdk-common-edge-v2.5.2) (2024-11-14)
 
 
