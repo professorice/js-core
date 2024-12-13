@@ -1,5 +1,44 @@
 # Changelog
 
+## [0.7.0](https://github.com/professorice/js-core/compare/server-sdk-ai-v0.6.0...server-sdk-ai-v0.7.0) (2024-12-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Change versionKey to variationKey. ([#709](https://github.com/professorice/js-core/issues/709))
+* Rename model and providerid to name. ([#706](https://github.com/professorice/js-core/issues/706))
+* Updated AI config interface. ([#697](https://github.com/professorice/js-core/issues/697))
+
+### Features
+
+* Add AI SDK for Server-Side JavaScript. ([#619](https://github.com/professorice/js-core/issues/619)) ([18e8c4c](https://github.com/professorice/js-core/commit/18e8c4c9c2189e7629e1e1eb995d85d857c4ae4f))
+* Add getSummary method to the tracker. ([#698](https://github.com/professorice/js-core/issues/698)) ([4df902d](https://github.com/professorice/js-core/commit/4df902d98584c88b072d6dab5f32a6ea8c4fcdf5))
+* Change the typing for the LDAIConfig. ([#688](https://github.com/professorice/js-core/issues/688)) ([1f3f54a](https://github.com/professorice/js-core/commit/1f3f54abef144cccc7ac5b9bfef8392b9d7f2618))
+* Include temperature and maxTokens in LDModelConfig. ([978dfa9](https://github.com/professorice/js-core/commit/978dfa95d1c25f942d96b730b187f92af045f90f))
+* Updated AI config interface. ([#697](https://github.com/professorice/js-core/issues/697)) ([cd72ea8](https://github.com/professorice/js-core/commit/cd72ea8193888b0635b5beffa0a877b18294777e))
+
+
+### Bug Fixes
+
+* Do not include _ldMeta in returned config. ([#668](https://github.com/professorice/js-core/issues/668)) ([89ce6db](https://github.com/professorice/js-core/commit/89ce6dbbb2889af66ca53dd546c5977953dea972))
+* Remove underscore token usage. Improve documentation. ([#667](https://github.com/professorice/js-core/issues/667)) ([5fe36fb](https://github.com/professorice/js-core/commit/5fe36fbd5b7047428204427fe6849d49de6ee952))
+* Update default typings to include enabled. ([978dfa9](https://github.com/professorice/js-core/commit/978dfa95d1c25f942d96b730b187f92af045f90f))
+
+
+### Code Refactoring
+
+* Change versionKey to variationKey. ([#709](https://github.com/professorice/js-core/issues/709)) ([bfee298](https://github.com/professorice/js-core/commit/bfee29843125c55be1b21e4f77c9d8c3c8698856))
+* Rename model and providerid to name. ([#706](https://github.com/professorice/js-core/issues/706)) ([8dd3951](https://github.com/professorice/js-core/commit/8dd39517cfc14c6e037a2438d22f20a9527c9ffa))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @launchdarkly/js-server-sdk-common bumped from 2.10.0 to 3.0.0
+  * peerDependencies
+    * @launchdarkly/js-server-sdk-common bumped from 2.x to 3.0.0
+
 ## [0.6.0](https://github.com/launchdarkly/js-core/compare/server-sdk-ai-v0.5.0...server-sdk-ai-v0.6.0) (2024-12-10)
 
 
