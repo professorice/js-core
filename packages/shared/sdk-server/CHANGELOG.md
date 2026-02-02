@@ -8,6 +8,54 @@ All notable changes to `@launchdarkly/js-server-sdk-common` will be documented i
   * dependencies
     * @launchdarkly/js-sdk-common bumped from 2.3.0 to 2.3.1
 
+## [2.18.0](https://github.com/professorice/js-core/compare/js-server-sdk-common-v2.17.1...js-server-sdk-common-v2.18.0) (2026-02-02)
+
+
+### Features
+
+* add FDv2 FileDataSource initializer ([#1010](https://github.com/professorice/js-core/issues/1010)) ([99931f0](https://github.com/professorice/js-core/commit/99931f0706c0202390e3b68e3701ba0fb8aba124))
+* Add platform support for async hashing. ([#573](https://github.com/professorice/js-core/issues/573)) ([9248035](https://github.com/professorice/js-core/commit/9248035a88fba1c7375c5df22ef6b4a80a867983))
+* Add plugin support for node. ([#880](https://github.com/professorice/js-core/issues/880)) ([6b7bf7e](https://github.com/professorice/js-core/commit/6b7bf7eca3b26c3d6e04736fee9ec2f137e743a5))
+* Add prerequisite information to server-side allFlagsState. ([8c84e01](https://github.com/professorice/js-core/commit/8c84e0149a5621c6fcb95f2cfdbd6112f3540191))
+* Add support for client-side prerequisite events. ([8c84e01](https://github.com/professorice/js-core/commit/8c84e0149a5621c6fcb95f2cfdbd6112f3540191))
+* Add support for conditional event source capabilities. ([#577](https://github.com/professorice/js-core/issues/577)) ([fe82500](https://github.com/professorice/js-core/commit/fe82500f28cf8d8311502098aa6cc2e73932064e))
+* Add support for getting the logger from server-side SDKs. ([#684](https://github.com/professorice/js-core/issues/684)) ([1c411a1](https://github.com/professorice/js-core/commit/1c411a15e308520dc7a0f20af76045f84d53e8a4))
+* Add support for optional timeout for waitForInitialization. ([#437](https://github.com/professorice/js-core/issues/437)) ([c6032b3](https://github.com/professorice/js-core/commit/c6032b3dd80421ff42aefd729442d18cd27b16e4))
+* Add support for Payload Filtering ([#551](https://github.com/professorice/js-core/issues/551)) ([6f44383](https://github.com/professorice/js-core/commit/6f4438323baed802d8f951ac82494e6cfa9932c5))
+* Add support for prerequisite details to evaluation detail. ([8c84e01](https://github.com/professorice/js-core/commit/8c84e0149a5621c6fcb95f2cfdbd6112f3540191))
+* adds datasource status to sdk-client ([#590](https://github.com/professorice/js-core/issues/590)) ([6f26204](https://github.com/professorice/js-core/commit/6f262045b76836e5d2f5ccc2be433094993fcdbb))
+* Adds StreamingProcessor for FDv2 to sdk-server package. ([#707](https://github.com/professorice/js-core/issues/707)) ([7f5c275](https://github.com/professorice/js-core/commit/7f5c2750dcc8341d049d7e736ca21ec36e168703))
+* Allow using custom user-agent name. ([#580](https://github.com/professorice/js-core/issues/580)) ([ed5a206](https://github.com/professorice/js-core/commit/ed5a206c86f496942664dd73f6f8a7c602a1de28))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* Correct client evaluation typings. ([#554](https://github.com/professorice/js-core/issues/554)) ([64ab88d](https://github.com/professorice/js-core/commit/64ab88d278308564b4cd7b6433870c7adb09142a))
+* Environment ID support for hooks ([#823](https://github.com/professorice/js-core/issues/823)) ([63dc9f9](https://github.com/professorice/js-core/commit/63dc9f9f1300c598e79be27909f8195ac66d54ef))
+* Export internalServer module for internal LD usage ([#804](https://github.com/professorice/js-core/issues/804)) ([ec43ac8](https://github.com/professorice/js-core/commit/ec43ac8af03c778d8d0ac2bd6213f9d54bf011ac))
+* Implement support for hooks. ([#400](https://github.com/professorice/js-core/issues/400)) ([14cb044](https://github.com/professorice/js-core/commit/14cb044f7da5253d268ed37ceeac28f00d4626a5))
+* Option to use gzip to compress event ([#814](https://github.com/professorice/js-core/issues/814)) ([4e91431](https://github.com/professorice/js-core/commit/4e914317d31378e2a1eaed5aa03e0ac6beac43d5))
+* Support inline context for custom and migration events ([6aadf04](https://github.com/professorice/js-core/commit/6aadf0463968f89bc3df10023267244c2ade1b31))
+
+
+### Bug Fixes
+
+* Cleanup timeout timer for waitForInitialization ([#478](https://github.com/professorice/js-core/issues/478)) ([fccbfac](https://github.com/professorice/js-core/commit/fccbfaccb88c7a66f86a2981b74445c894618a06))
+* corrected location of payloadFilterKey in LDOptions ([#863](https://github.com/professorice/js-core/issues/863)) ([cc825d4](https://github.com/professorice/js-core/commit/cc825d499b00a46cc887c1804088fbf4cdf082a0))
+* Correctly handle null values in JSON variations. ([#569](https://github.com/professorice/js-core/issues/569)) ([907d08b](https://github.com/professorice/js-core/commit/907d08b730ce9745c1b221f2f539f7c56c3a0234)), closes [#568](https://github.com/professorice/js-core/issues/568)
+* Deprecate LDMigrationOpEvent.contextKeys in favor of LDMigrationOpEvent.context ([6aadf04](https://github.com/professorice/js-core/commit/6aadf0463968f89bc3df10023267244c2ade1b31))
+* FDv2 initializer readiness ([#1017](https://github.com/professorice/js-core/issues/1017)) ([7a3af02](https://github.com/professorice/js-core/commit/7a3af024ca4db273a90e1b9a1f21ec53ef2fed35))
+* Fix cancelling timeout when waitForInitialization throws an exception ([#808](https://github.com/professorice/js-core/issues/808)) ([bb3c950](https://github.com/professorice/js-core/commit/bb3c95041fc41100b11eb698c7662b2442d46fd1))
+* Fix issue where flush callback could be called twice. ([#779](https://github.com/professorice/js-core/issues/779)) ([c377e89](https://github.com/professorice/js-core/commit/c377e890f9af71f1658f3303217118206496a602))
+* Improve serialization/deserialization overhead with EdgeFeatureStore ([#914](https://github.com/professorice/js-core/issues/914)) ([76d614f](https://github.com/professorice/js-core/commit/76d614f8b036750275cec90ac5b5d68322bf912e))
+* Include prerequisiteKey in migration op event. ([#481](https://github.com/professorice/js-core/issues/481)) ([824f59d](https://github.com/professorice/js-core/commit/824f59d256e6316365b32117887a1af2520d8996))
+* LRU cache memory leak. ([#475](https://github.com/professorice/js-core/issues/475)) ([a5fdefc](https://github.com/professorice/js-core/commit/a5fdefcf48f359ab26846edb057eb480bfc3db7e)), closes [#474](https://github.com/professorice/js-core/issues/474)
+* Produce a warning when track is called with a non-numeric metric value. ([#449](https://github.com/professorice/js-core/issues/449)) ([6799742](https://github.com/professorice/js-core/commit/6799742a7914d32b3313e54408f0a2a3dda3ff5c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-sdk-common bumped from 2.20.0 to 2.21.0
+
 ## [2.17.1](https://github.com/launchdarkly/js-core/compare/js-server-sdk-common-v2.17.0...js-server-sdk-common-v2.17.1) (2025-12-09)
 
 

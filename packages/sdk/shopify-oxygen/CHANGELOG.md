@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/professorice/js-core/compare/shopify-oxygen-sdk-v0.1.2...shopify-oxygen-sdk-v0.2.0) (2026-02-02)
+
+
+### Features
+
+* adding shopify oxygen server sdk ([#991](https://github.com/professorice/js-core/issues/991)) ([e70e484](https://github.com/professorice/js-core/commit/e70e4846d03f7ca2b6ef267efa90a24810e9364a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-server-sdk-common bumped from 2.17.1 to 2.18.0
+
 ## [0.1.2](https://github.com/launchdarkly/js-core/compare/shopify-oxygen-sdk-v0.1.1...shopify-oxygen-sdk-v0.1.2) (2025-12-09)
 
 

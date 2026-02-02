@@ -1,5 +1,54 @@
 # Changelog
 
+## [10.13.0](https://github.com/professorice/js-core/compare/react-native-client-sdk-v10.12.6...react-native-client-sdk-v10.13.0) (2026-02-02)
+
+
+### Features
+
+* Add client-side SDK plugin support. ([#834](https://github.com/professorice/js-core/issues/834)) ([a843a33](https://github.com/professorice/js-core/commit/a843a33e97dcab706a0034bd1fd1e3d2f78a9262))
+* Add configuration validation for ReactNative specific configuration. ([#532](https://github.com/professorice/js-core/issues/532)) ([c1490e2](https://github.com/professorice/js-core/commit/c1490e22d0b3fb4d7df878aabab0ea24db502fb6))
+* Add connection mananger. ([#522](https://github.com/professorice/js-core/issues/522)) ([5bf8b16](https://github.com/professorice/js-core/commit/5bf8b16e26e7d8cbbd18524f1c13f773de457b82))
+* Add identify timeout to client-sdk. ([#420](https://github.com/professorice/js-core/issues/420)) ([5d73dfe](https://github.com/professorice/js-core/commit/5d73dfeb0d5cdacf620e65e214dd2e334363490e))
+* Add support for conditional event source capabilities. ([#577](https://github.com/professorice/js-core/issues/577)) ([fe82500](https://github.com/professorice/js-core/commit/fe82500f28cf8d8311502098aa6cc2e73932064e))
+* Add support for hooks. ([#605](https://github.com/professorice/js-core/issues/605)) ([04d347b](https://github.com/professorice/js-core/commit/04d347b25e01015134a2545be22bfd8b1d1e85cc))
+* Add support for inspectors. ([#625](https://github.com/professorice/js-core/issues/625)) ([a986478](https://github.com/professorice/js-core/commit/a986478ed8e39d0f529ca6adec0a09b484421390))
+* Add support for js-client-sdk style initialization. ([53f5bb8](https://github.com/professorice/js-core/commit/53f5bb89754ff05405d481a959e75742fbd0d0a9))
+* add support for steaming in Vega OS ([#974](https://github.com/professorice/js-core/issues/974)) ([7b6ac03](https://github.com/professorice/js-core/commit/7b6ac037b697e6e3a2ccf7c22b519510f02f8364))
+* Added react-universal code. ([#493](https://github.com/professorice/js-core/issues/493)) ([e1d2d30](https://github.com/professorice/js-core/commit/e1d2d3061246421e9931d4ec271d477fcbede265))
+* adds ping stream support ([#624](https://github.com/professorice/js-core/issues/624)) ([dee53af](https://github.com/professorice/js-core/commit/dee53af9312b74a70b748d49b2d2911d65333cf3))
+* Adds support for REPORT. ([#575](https://github.com/professorice/js-core/issues/575)) ([916b724](https://github.com/professorice/js-core/commit/916b72409b63abdf350e70cca41331c4204b6e95))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* custom storage option for React Native SDK ([#539](https://github.com/professorice/js-core/issues/539)) ([115bd82](https://github.com/professorice/js-core/commit/115bd828c665731084665b5d94bb3836942332b1))
+* Implement polling support. ([#524](https://github.com/professorice/js-core/issues/524)) ([a99048e](https://github.com/professorice/js-core/commit/a99048e0cebaafd536f79114c4727524b8f7357d))
+* Refactor application state handling. ([#523](https://github.com/professorice/js-core/issues/523)) ([f5b81e6](https://github.com/professorice/js-core/commit/f5b81e6fc571dc9d97a18d07f382c77cd938fd65))
+* Refactor data source connection handling.  ([53f5bb8](https://github.com/professorice/js-core/commit/53f5bb89754ff05405d481a959e75742fbd0d0a9))
+* Remove event target shim. ([#545](https://github.com/professorice/js-core/issues/545)) ([448ad67](https://github.com/professorice/js-core/commit/448ad67815b9ec29abd322ed8483b2367147b146)), closes [#412](https://github.com/professorice/js-core/issues/412)
+* Update expo and RN version used in example. ([#520](https://github.com/professorice/js-core/issues/520)) ([b8384c4](https://github.com/professorice/js-core/commit/b8384c41243fb7475439cc634459b5156e05791b))
+* Update react native async local storage to v2. ([#930](https://github.com/professorice/js-core/issues/930)) ([4888b33](https://github.com/professorice/js-core/commit/4888b33f28cedb22426b13a02697b1c25a2711d1))
+
+
+### Bug Fixes
+
+* Added iOS SettingsManager null check. ([#471](https://github.com/professorice/js-core/issues/471)) ([8ff641b](https://github.com/professorice/js-core/commit/8ff641be8b32f24884457bd506566e283cf04e40))
+* Client SDKs should use wrapper information. ([#836](https://github.com/professorice/js-core/issues/836)) ([1e0cf6a](https://github.com/professorice/js-core/commit/1e0cf6a0f77f8cfe6a7a0e675fc6490ea52a5b07))
+* Ensure client logger is always wrapped in a safe logger. ([#599](https://github.com/professorice/js-core/issues/599)) ([980e4da](https://github.com/professorice/js-core/commit/980e4daaf32864e18f14b1e5e28e308dff0ae94f))
+* Ensure streaming connection is closed on SDK close. ([#774](https://github.com/professorice/js-core/issues/774)) ([f58e746](https://github.com/professorice/js-core/commit/f58e746a089fb0cd5f6169f6c246e1f6515f5047))
+* evaluation detail type should be optional ([#1064](https://github.com/professorice/js-core/issues/1064)) ([e81c333](https://github.com/professorice/js-core/commit/e81c333034f2e8206dfaf70d6fdb6001747b777f))
+* Fix base64 encoding of unicode characters. ([#613](https://github.com/professorice/js-core/issues/613)) ([35ec8d1](https://github.com/professorice/js-core/commit/35ec8d1ecc07ddb68f4d02b19e1f238f7ff14df7))
+* Fix field visibility. ([#530](https://github.com/professorice/js-core/issues/530)) ([21fb18b](https://github.com/professorice/js-core/commit/21fb18b40139583b44a4185fb689b043547641ab))
+* Handle non-status code errors for streaming connection. ([#533](https://github.com/professorice/js-core/issues/533)) ([fc4645e](https://github.com/professorice/js-core/commit/fc4645eb7d70425e7ea615e275e5ad1e488365d4))
+* Make it more clear what is happening when an event source is connecting. ([#518](https://github.com/professorice/js-core/issues/518)) ([52055ba](https://github.com/professorice/js-core/commit/52055ba603349c6a2d94e25c58813765d4d9abd9))
+* **react-native:** check for nullability in SettingsManager?.settings ([#758](https://github.com/professorice/js-core/issues/758)) ([3449934](https://github.com/professorice/js-core/commit/3449934027697ac9283aeeeca8df9a76d172fcad))
+* Requestor initialized with wrong withReasons and useReport config ([#869](https://github.com/professorice/js-core/issues/869)) ([2e095c5](https://github.com/professorice/js-core/commit/2e095c5cc5790dd554d63745a5ebcbfb0f44139a))
+* Use release-please to update SDK versions ([#1013](https://github.com/professorice/js-core/issues/1013)) ([d1d11f1](https://github.com/professorice/js-core/commit/d1d11f1feb29fc5ccbf14506aa374162d452be42))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-client-sdk-common bumped from 1.17.2 to 1.18.0
+
 ## [10.12.6](https://github.com/launchdarkly/js-core/compare/react-native-client-sdk-v10.12.5...react-native-client-sdk-v10.12.6) (2026-01-21)
 
 
