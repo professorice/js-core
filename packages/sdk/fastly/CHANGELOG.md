@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.3.0](https://github.com/professorice/js-core/compare/fastly-server-sdk-v0.2.4...fastly-server-sdk-v0.3.0) (2026-02-02)
+
+
+### Features
+
+* Add Fastly Edge SDK ([#723](https://github.com/professorice/js-core/issues/723)) ([02e0eee](https://github.com/professorice/js-core/commit/02e0eeea8678e66911eb28c5ccca59e4956a1457))
+* Improve KV data caching and deserialization ([#903](https://github.com/professorice/js-core/issues/903)) ([ae47860](https://github.com/professorice/js-core/commit/ae4786096c34829745070ed2a69a6d964be46e4d))
+
+
+### Bug Fixes
+
+* Remove logging of SDK option configurations ([#806](https://github.com/professorice/js-core/issues/806)) ([a76d196](https://github.com/professorice/js-core/commit/a76d19690a7ef5932c36bfc974affc0a192c2d4f))
+* Use release-please to update SDK versions ([#1013](https://github.com/professorice/js-core/issues/1013)) ([d1d11f1](https://github.com/professorice/js-core/commit/d1d11f1feb29fc5ccbf14506aa374162d452be42))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-server-sdk-common bumped from 2.17.1 to 2.18.0
+
 ## [0.2.4](https://github.com/launchdarkly/js-core/compare/fastly-server-sdk-v0.2.3...fastly-server-sdk-v0.2.4) (2025-12-09)
 
 

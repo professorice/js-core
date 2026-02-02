@@ -1,5 +1,28 @@
 # Changelog
 
+## [6.3.0](https://github.com/professorice/js-core/compare/node-server-sdk-dynamodb-v6.2.17...node-server-sdk-dynamodb-v6.3.0) (2026-02-02)
+
+
+### Features
+
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+
+
+### Bug Fixes
+
+* Correct store/telemetry peer deps. ([#439](https://github.com/professorice/js-core/issues/439)) ([b963554](https://github.com/professorice/js-core/commit/b9635541ee0a31094063075faae942698f2e8180))
+* Include prerequisiteKey in migration op event. ([#481](https://github.com/professorice/js-core/issues/481)) ([824f59d](https://github.com/professorice/js-core/commit/824f59d256e6316365b32117887a1af2520d8996))
+* uncaught DynamoDB exception ([#888](https://github.com/professorice/js-core/issues/888)) ([91ff683](https://github.com/professorice/js-core/commit/91ff683bb196589ac4b13dbd487e4d50b0575440))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @launchdarkly/node-server-sdk bumped from 9.10.5 to 9.11.0
+  * peerDependencies
+    * @launchdarkly/node-server-sdk bumped from >=9.4.3 to >=9.11.0
+
 ## [6.2.17](https://github.com/launchdarkly/js-core/compare/node-server-sdk-dynamodb-v6.2.16...node-server-sdk-dynamodb-v6.2.17) (2025-12-09)
 
 

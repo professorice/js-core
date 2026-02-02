@@ -2,6 +2,48 @@
 
 All notable changes to `@launchdarkly/js-sdk-common` will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [2.21.0](https://github.com/professorice/js-core/compare/js-sdk-common-v2.20.0...js-sdk-common-v2.21.0) (2026-02-02)
+
+
+### Features
+
+* Add client-side SDK plugin support. ([#834](https://github.com/professorice/js-core/issues/834)) ([a843a33](https://github.com/professorice/js-core/commit/a843a33e97dcab706a0034bd1fd1e3d2f78a9262))
+* Add ESM support for common and common-client (rollup) ([#604](https://github.com/professorice/js-core/issues/604)) ([8cd0cdc](https://github.com/professorice/js-core/commit/8cd0cdce988f606b1efdf6bfd19484f6607db2e5))
+* add FDv2 FileDataSource initializer ([#1010](https://github.com/professorice/js-core/issues/1010)) ([99931f0](https://github.com/professorice/js-core/commit/99931f0706c0202390e3b68e3701ba0fb8aba124))
+* Add identify timeout to client-sdk. ([#420](https://github.com/professorice/js-core/issues/420)) ([5d73dfe](https://github.com/professorice/js-core/commit/5d73dfeb0d5cdacf620e65e214dd2e334363490e))
+* Add platform support for async hashing. ([#573](https://github.com/professorice/js-core/issues/573)) ([9248035](https://github.com/professorice/js-core/commit/9248035a88fba1c7375c5df22ef6b4a80a867983))
+* Add support for a cancel-able timeout. ([#476](https://github.com/professorice/js-core/issues/476)) ([24ecf1d](https://github.com/professorice/js-core/commit/24ecf1d74b01e1fb32cd250689f17f96d1af1f50))
+* Add support for conditional event source capabilities. ([#577](https://github.com/professorice/js-core/issues/577)) ([fe82500](https://github.com/professorice/js-core/commit/fe82500f28cf8d8311502098aa6cc2e73932064e))
+* Add support for Payload Filtering ([#551](https://github.com/professorice/js-core/issues/551)) ([6f44383](https://github.com/professorice/js-core/commit/6f4438323baed802d8f951ac82494e6cfa9932c5))
+* Add support for per-context summary events. ([#859](https://github.com/professorice/js-core/issues/859)) ([c9fa5c4](https://github.com/professorice/js-core/commit/c9fa5c45f3ac2cbaad2f2e6312d5231c3f671d98))
+* Add URLs for custom events and URL filtering. ([#587](https://github.com/professorice/js-core/issues/587)) ([7131e69](https://github.com/professorice/js-core/commit/7131e6905f19cc10a1374aae5e74cec66c7fd6de))
+* Add visibility handling to allow proactive event flushing. ([#607](https://github.com/professorice/js-core/issues/607)) ([819a311](https://github.com/professorice/js-core/commit/819a311db6f56e323bb84c925789ad4bd19ae4ba))
+* additional FDv2 functionality ([#898](https://github.com/professorice/js-core/issues/898)) ([9ede15c](https://github.com/professorice/js-core/commit/9ede15c757ed1b8c57b090716d44cf60a03da409))
+* adds datasource status to sdk-client ([#590](https://github.com/professorice/js-core/issues/590)) ([6f26204](https://github.com/professorice/js-core/commit/6f262045b76836e5d2f5ccc2be433094993fcdbb))
+* Adds StreamingProcessor for FDv2 to sdk-server package. ([#707](https://github.com/professorice/js-core/issues/707)) ([7f5c275](https://github.com/professorice/js-core/commit/7f5c2750dcc8341d049d7e736ca21ec36e168703))
+* Adds support for REPORT. ([#575](https://github.com/professorice/js-core/issues/575)) ([916b724](https://github.com/professorice/js-core/commit/916b72409b63abdf350e70cca41331c4204b6e95))
+* Allow using custom user-agent name. ([#580](https://github.com/professorice/js-core/issues/580)) ([ed5a206](https://github.com/professorice/js-core/commit/ed5a206c86f496942664dd73f6f8a7c602a1de28))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* Correct client evaluation typings. ([#554](https://github.com/professorice/js-core/issues/554)) ([64ab88d](https://github.com/professorice/js-core/commit/64ab88d278308564b4cd7b6433870c7adb09142a))
+* Enhance basic logger destination support. ([#650](https://github.com/professorice/js-core/issues/650)) ([21670c4](https://github.com/professorice/js-core/commit/21670c4acd629f7ccfeb7abbe94fe89723533600))
+* Environment ID support for hooks ([#823](https://github.com/professorice/js-core/issues/823)) ([63dc9f9](https://github.com/professorice/js-core/commit/63dc9f9f1300c598e79be27909f8195ac66d54ef))
+* Implement goals for client-side SDKs. ([#585](https://github.com/professorice/js-core/issues/585)) ([fd38a8f](https://github.com/professorice/js-core/commit/fd38a8fa8560dad0c6721c2eaeed2f3f5c674900))
+* Option to use gzip to compress event ([#814](https://github.com/professorice/js-core/issues/814)) ([4e91431](https://github.com/professorice/js-core/commit/4e914317d31378e2a1eaed5aa03e0ac6beac43d5))
+* refactors the implementation of context caching.  You can now s… ([#531](https://github.com/professorice/js-core/issues/531)) ([8ab2ee4](https://github.com/professorice/js-core/commit/8ab2ee425a35350a4f1c50e608c39fa3527da513))
+* Support inline context for custom and migration events ([6aadf04](https://github.com/professorice/js-core/commit/6aadf0463968f89bc3df10023267244c2ade1b31))
+
+
+### Bug Fixes
+
+* Add TimeoutError. ([#428](https://github.com/professorice/js-core/issues/428)) ([aa832db](https://github.com/professorice/js-core/commit/aa832db6172ba727aad9ec478b09a45906e9d5a7))
+* Deprecate LDMigrationOpEvent.contextKeys in favor of LDMigrationOpEvent.context ([6aadf04](https://github.com/professorice/js-core/commit/6aadf0463968f89bc3df10023267244c2ade1b31))
+* Handle missing message with valid string. ([#450](https://github.com/professorice/js-core/issues/450)) ([6ff8982](https://github.com/professorice/js-core/commit/6ff8982d5a68f1fff4b8fcafc3eb015a75d3f002))
+* Identify incorrectly rejected in client-sdk ([#426](https://github.com/professorice/js-core/issues/426)) ([a019dd6](https://github.com/professorice/js-core/commit/a019dd66b1b852d888e10b78aec9693d7de195fe))
+* Multi-kind context containing only 1 kind conveted incorrectly. ([#594](https://github.com/professorice/js-core/issues/594)) ([b6ff2a6](https://github.com/professorice/js-core/commit/b6ff2a67db9f9a24da4a45ad88fa7f2a22fb635d))
+* Produce a warning when track is called with a non-numeric metric value. ([#449](https://github.com/professorice/js-core/issues/449)) ([6799742](https://github.com/professorice/js-core/commit/6799742a7914d32b3313e54408f0a2a3dda3ff5c))
+* Remove outdated reference to geolocation. ([#719](https://github.com/professorice/js-core/issues/719)) ([0eeb3b6](https://github.com/professorice/js-core/commit/0eeb3b6472419d257bf52c4ab3ae33864eae1902))
+* Update sdk-client rollup configuration to match common ([#630](https://github.com/professorice/js-core/issues/630)) ([e061811](https://github.com/professorice/js-core/commit/e06181158d29824ff0131a88988c84cd4a32f6c0))
+
 ## [2.20.0](https://github.com/launchdarkly/js-core/compare/js-sdk-common-v2.19.0...js-sdk-common-v2.20.0) (2025-12-05)
 
 

@@ -1,5 +1,36 @@
 # Changelog
 
+## [0.5.0](https://github.com/professorice/js-core/compare/server-sdk-ai-langchain-v0.4.3...server-sdk-ai-langchain-v0.5.0) (2026-02-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Change to ES Modules to improve support of dynamic loading ([#1011](https://github.com/professorice/js-core/issues/1011))
+* Support invoke with structured output in LangChain provider  ([#970](https://github.com/professorice/js-core/issues/970))
+
+### Features
+
+* Add LangChain Provider for AI SDK ([#941](https://github.com/professorice/js-core/issues/941)) ([9cbfb87](https://github.com/professorice/js-core/commit/9cbfb87a73c76cc80b9eac29f7409f156037fce7))
+* Renamed createAIMetrics to getAIMetricsFromResponse ([#977](https://github.com/professorice/js-core/issues/977)) ([05b4667](https://github.com/professorice/js-core/commit/05b4667fe6385672f89c84d49302ce40f99e28d5))
+* Support invoke with structured output in LangChain provider  ([#970](https://github.com/professorice/js-core/issues/970)) ([0427908](https://github.com/professorice/js-core/commit/0427908cdd410d1f7fefd405bf08945b559070f5))
+
+
+### Bug Fixes
+
+* Change to ES Modules to improve support of dynamic loading ([#1011](https://github.com/professorice/js-core/issues/1011)) ([11de076](https://github.com/professorice/js-core/commit/11de076f270f730b0f05134ce9f57d573f7c0067))
+* Improve documentation for AI SDK and AIProvider ([#958](https://github.com/professorice/js-core/issues/958)) ([17d595a](https://github.com/professorice/js-core/commit/17d595aff301998030cfb62724b8eb37fea9adbf))
+* Make unit test less brittle and add CI ([#953](https://github.com/professorice/js-core/issues/953)) ([a2236a9](https://github.com/professorice/js-core/commit/a2236a9d455c60901b870dfe4beb8cffcfab986f))
+* Reduce dependencies and use peer dependencies when needed ([#963](https://github.com/professorice/js-core/issues/963)) ([7f3da30](https://github.com/professorice/js-core/commit/7f3da3071ac175451a0c39bfb9717170e516997f))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @launchdarkly/server-sdk-ai bumped from ^0.16.0 to ^0.17.0
+  * peerDependencies
+    * @launchdarkly/server-sdk-ai bumped from ^0.15.0 to ^0.17.0
+
 ## [0.4.3](https://github.com/launchdarkly/js-core/compare/server-sdk-ai-langchain-v0.4.2...server-sdk-ai-langchain-v0.4.3) (2026-01-27)
 
 

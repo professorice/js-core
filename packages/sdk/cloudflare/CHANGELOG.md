@@ -21,6 +21,28 @@ All notable changes to the LaunchDarkly SDK for Cloudflare Workers will be docum
   * devDependencies
     * @launchdarkly/js-server-sdk-common-edge bumped from 2.2.1 to 2.2.2
 
+## [2.8.0](https://github.com/professorice/js-core/compare/cloudflare-server-sdk-v2.7.12...cloudflare-server-sdk-v2.8.0) (2026-02-02)
+
+
+### Features
+
+* Add TTL caching for data store ([#801](https://github.com/professorice/js-core/issues/801)) ([c1de485](https://github.com/professorice/js-core/commit/c1de4850c81dff8ad52276c2bfc2a2aeb87bd2d9))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+
+
+### Bug Fixes
+
+* cloudflare-server-sdk exports to support using migrations ([#854](https://github.com/professorice/js-core/issues/854)) ([3366775](https://github.com/professorice/js-core/commit/33667756b9aef26ad10062f02299597aa5552ac1))
+* Include name and version in platform. ([#453](https://github.com/professorice/js-core/issues/453)) ([3b4e212](https://github.com/professorice/js-core/commit/3b4e212a563e5dc8b4953fadb6b31160076ec001))
+* Remove bundled dependency from package.json. ([#711](https://github.com/professorice/js-core/issues/711)) ([0fb5375](https://github.com/professorice/js-core/commit/0fb5375443a5137c3588d454465794eb530cb982))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-server-sdk-common-edge bumped from 2.6.11 to 2.7.0
+
 ## [2.7.12](https://github.com/launchdarkly/js-core/compare/cloudflare-server-sdk-v2.7.11...cloudflare-server-sdk-v2.7.12) (2025-12-09)
 
 

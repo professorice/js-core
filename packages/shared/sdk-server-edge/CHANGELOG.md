@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.7.0](https://github.com/professorice/js-core/compare/js-server-sdk-common-edge-v2.6.11...js-server-sdk-common-edge-v2.7.0) (2026-02-02)
+
+
+### Features
+
+* Add support for conditional event source capabilities. ([#577](https://github.com/professorice/js-core/issues/577)) ([fe82500](https://github.com/professorice/js-core/commit/fe82500f28cf8d8311502098aa6cc2e73932064e))
+* Add support for optional timeout for waitForInitialization. ([#437](https://github.com/professorice/js-core/issues/437)) ([c6032b3](https://github.com/professorice/js-core/commit/c6032b3dd80421ff42aefd729442d18cd27b16e4))
+* Add TTL caching for data store ([#801](https://github.com/professorice/js-core/issues/801)) ([c1de485](https://github.com/professorice/js-core/commit/c1de4850c81dff8ad52276c2bfc2a2aeb87bd2d9))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+
+
+### Bug Fixes
+
+* Improve serialization/deserialization overhead with EdgeFeatureStore ([#914](https://github.com/professorice/js-core/issues/914)) ([76d614f](https://github.com/professorice/js-core/commit/76d614f8b036750275cec90ac5b5d68322bf912e))
+* Log errors when there is no error event handler. ([#495](https://github.com/professorice/js-core/issues/495)) ([6b73699](https://github.com/professorice/js-core/commit/6b73699061efa46cd291756d3932fcf78d480f40))
+* Remove logging of SDK option configurations ([#806](https://github.com/professorice/js-core/issues/806)) ([a76d196](https://github.com/professorice/js-core/commit/a76d19690a7ef5932c36bfc974affc0a192c2d4f))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/js-server-sdk-common bumped from 2.17.1 to 2.18.0
+
 ## [2.6.11](https://github.com/launchdarkly/js-core/compare/js-server-sdk-common-edge-v2.6.10...js-server-sdk-common-edge-v2.6.11) (2025-12-09)
 
 

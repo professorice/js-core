@@ -31,6 +31,28 @@ All notable changes to the LaunchDarkly SDK for Akamai Workers will be documente
     * @launchdarkly/akamai-edgeworker-sdk-common bumped from ^1.1.1 to ^1.1.2
     * @launchdarkly/js-server-sdk-common bumped from ^2.2.1 to ^2.2.2
 
+## [1.5.0](https://github.com/professorice/js-core/compare/akamai-server-edgekv-sdk-v1.4.15...akamai-server-edgekv-sdk-v1.5.0) (2026-02-02)
+
+
+### Features
+
+* Add cacheTtlMs option ([#760](https://github.com/professorice/js-core/issues/760)) ([4f961dd](https://github.com/professorice/js-core/commit/4f961dd16fd10f5bb55dd2116d26b218944bfeb2))
+* Apply private property naming standard. Mangle browser private properties. ([#620](https://github.com/professorice/js-core/issues/620)) ([3e6d404](https://github.com/professorice/js-core/commit/3e6d404ae665c5cc7e5a1394a59c8f2c9d5d682a))
+* Upgrade edgekv bundled files to 0.6.3 ([#610](https://github.com/professorice/js-core/issues/610)) ([58dfec6](https://github.com/professorice/js-core/commit/58dfec68c268390852cc511191c7f9b47ec3e668))
+
+
+### Bug Fixes
+
+* Use release-please to update SDK versions ([#1013](https://github.com/professorice/js-core/issues/1013)) ([d1d11f1](https://github.com/professorice/js-core/commit/d1d11f1feb29fc5ccbf14506aa374162d452be42))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @launchdarkly/akamai-edgeworker-sdk-common bumped from ^2.0.12 to ^3.0.0
+    * @launchdarkly/js-server-sdk-common bumped from ^2.17.1 to ^2.18.0
+
 ## [1.4.15](https://github.com/launchdarkly/js-core/compare/akamai-server-edgekv-sdk-v1.4.14...akamai-server-edgekv-sdk-v1.4.15) (2025-12-09)
 
 
